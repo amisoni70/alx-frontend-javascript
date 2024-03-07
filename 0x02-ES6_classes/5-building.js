@@ -8,16 +8,16 @@ export default class Building {
       this._sqft = sqft;
     }
   }
-
+ 
   // Getter for sqft
   get sqft() {
     return this._sqft;
   }
-
-  // Setter for sqft
+  
+  //Setter for sqft
   set sqft(sqft) {
-    if ((typeof sqft !== 'number') && (sqft instanceof Number)) {
-      throw new TypeError('sqft must be a number');
+    if (typeof sqft !== 'number') {
+      throw new TypeError('Sqft must be a number');
     }
     this._sqft = sqft;
   }
