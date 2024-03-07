@@ -4,7 +4,7 @@ export default class HolbertonCourse {
       throw new TypeError('Name must be a string');
     }
     if ((typeof length !== 'number') && !(length instanceof Number)) {
-      throw new TypeError('Length must be a number.');
+      throw new TypeError('Length must be a number');
     }
     if (!(students instanceof Array) || !students.every((s) => typeof s === 'string')) {
       throw new TypeError('Students must be an array of strings');
