@@ -6,3 +6,7 @@ interface Teacher {
   location: string;
   contract?: any;
 }
+
+interface Directors extends Teacher {
+  numberOfReports: number;
+}
